@@ -4,7 +4,7 @@ const WeatherCard = ({ weather }) => {
   if (!weather) return <p>No data available</p>;
 
   const { location, current } = weather;
-  const { temp_c, humidity, condition, icon } = current;
+  const { temp_c, humidity, condition} = current;
 
  
 

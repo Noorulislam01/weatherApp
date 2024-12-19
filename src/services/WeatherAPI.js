@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const API_KEY = '2ab48c3159bf4f22846113219240506';
-const BASE_URL = 'http://api.weatherapi.com/v1/current.json';
-
 export const fetchWeatherData = async (city) => {
+  const API_KEY = process.env.REACT_APP_API_KEY;
+  const BASE_URL = process.env.REACT_APP_BASE_URL;
+
   try {
     const response = await axios.get(BASE_URL, {
       params: {

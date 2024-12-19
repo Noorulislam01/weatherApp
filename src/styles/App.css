@@ -1,0 +1,114 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/weatherBackground.jpg'); /* Correct property name */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the image */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  
+  .App {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .home {
+    padding: 20px;
+  }
+  
+  .search-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3;
+  }
+  
+  .weather-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .weather-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-content {
+    z-index: 1;
+  }
+  
+  .city-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .weather-icon {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .weather-condition {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .weather-details p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .weather-details {
+    margin-top: 15px;
+  }
+  
+  @media (max-width: 600px) {
+    .search-bar input {
+      width: 160px;
+    }
+  
+    .search-bar button {
+      padding: 8px 15px;
+    }
+  
+    .weather-card {
+      padding: 15px;
+    }
+  }
+  
